@@ -1,4 +1,4 @@
-# GTKinter - GTK+ обёртка в стиле Tkinter
+# GTKinter
 
 ![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)
 ![GTK](https://img.shields.io/badge/GTK-3.0-green.svg)
@@ -37,7 +37,9 @@ pip install PyGObject
 pip install gtkinter
 ```
 
-**Пример:**
+## Пример работы
+
+**Привет, мир:**
 
 ```python
 from gtkinter import *
@@ -49,7 +51,7 @@ root.geometry("300x200")
 def on_click():
     label.config(text="Привет, мир!")
 
-btn = Button(root, text="Нажми меня!", command=on_click)
+btn = Button(root, text="Нажми на меня!", command=on_click)
 btn.pack(pady=10)
 
 label = Label(root, font="Arial 24 bold italic", fg="red")
@@ -57,3 +59,5 @@ label.pack()
 
 root.mainloop()
 ```
+
+****
