@@ -37,6 +37,12 @@ pip install PyGObject
 pip install gtkinter
 ```
 
+## Сравнение интерфейсов
+
+![Пример - "Вывод текста с entry" на Tkinter](images/tkinter-screenshot.png)
+
+![Пример - "Вывод текста с entry" на GTkinter](images/gtkinter-screenshot.png)
+
 ## Пример работы
 
 **Привет, мир:**
