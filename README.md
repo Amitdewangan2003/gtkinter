@@ -60,4 +60,26 @@ label.pack()
 root.mainloop()
 ```
 
-****
+**Вывод текста с entry:**
+
+```python
+from gtkinter import *
+
+def show_message():
+    label["text"] = entry.get()
+
+root = Tk()
+root.title("Поле ввода Entry")
+root.geometry("250x200")
+
+entry = Entry()
+entry.pack(anchor="nw", padx=6, pady=6)
+
+btn = Button(text="Нажми на меня!", command=show_message)
+btn.pack(anchor="nw", padx=6, pady=6)
+
+label = Label(font="Arial 24 bold italic", fg="red")
+label.pack(anchor="nw", padx=6, pady=6)
+
+root.mainloop()
+```
